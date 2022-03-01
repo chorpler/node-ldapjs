@@ -1,8 +1,10 @@
-const fs = require('fs/promises')
+const fs = require('fs').promises
 const path = require('path')
 const { marked } = require('marked')
 const fm = require('front-matter')
 const { highlight } = require('highlight.js')
+
+// const fs = fs1.promises;
 
 marked.use({
   highlight: (code, lang) => {
